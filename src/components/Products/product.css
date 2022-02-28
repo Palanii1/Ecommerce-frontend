@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: grey;
+  color: #222;
+}
+
+.booklist {
+  position: relative;
+  width: 90vw;
+  max-width: 1170px;
+  margin: 10rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.book {
+  background: wheat;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.book h1 {
+  margin-top: 0.5rem;
+  color: #222;
+}
+
+.book h4 {
+  color: blue;
+  letter-spacing: 3px;
+  font-family: cursive;
+  margin-top: 0.5rem;
+}
+
+.book img {
+  height: 180px;
+  width: 280px;
+}
